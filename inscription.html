@@ -1,41 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>oussema</title>
 </head>
 
 <body>
-      <table width="100%" border="1">
+     <center>
+       <table border="1" width="50%">
     <tr>
-        <td><a href="index.html">Accueil</a></td>
-        <td><a href="presentation.html">Présentation</a></td>
-        <td><a href="filieres.html">Filières</a></td>
-        <td><a href="inscription.html">Inscription</a></td>
-        <td><a href="contact.html">Contact</a></td>
+        <td><center><a href="index.html">Accueil</a></td></center>
+        <td><center><a href="presentation.html">Présentation</a></td></center>
+        <td><center><a href="filieres.html">Filières</a></td></center>
+        <td><center><a href="inscription.html">Inscription</a></td></center>
+        <td><center><a href="contact.html">Contact</a></td></center>
     </tr>
-</table><hr>
-    <form>
-        <label>
-            <label>nom:</label>
-            <input type="text"><br>
+</table>
+</center>
 
-            <label>prenom:</label>
-            <input type="text"><br>
+<form action="">
+    <fieldset>
+        <legend>Formulaire d'inscription</legend>
 
-            <label>age:</label>
-            <input type="number" min="15" max="18"><br>
+        <label for="nom">nom :</label>
+        <input type="text" placeholder="entrer votre nom"><br><br>
 
-            <label>sexe:</label><br>
-            <label>homme:</label>
-            <input type="radio"><label>famme:</label><input type="radio"><br>
+        <label for="prenom">prenom :</label>
+        <input type="text" placeholder="entrer votre prenom"><br><br>
 
-            <button type="submit">envoyer</button>
-        </label>
-    </form>
+        <label for="age">age :</label>
+        <input type="number" min="10" max="18"><br><br>
+
+        <label for="sex">sex :</label>
+        <input type="radio" name="sex"  value="homme"> homme
+        <input type="radio" name="sex"  value="femme"> femme
+        <br><br>
+
+        <label>langue preferes :</label><br>
+        <input type="checkbox" value="HTML"> HTML
+        <input type="checkbox" value="CSS"> CSS
+        <input type="checkbox" value="JavaScript">JavaScript<br><br>
+
+        <label>votre niveau :</label>
+        <select>
+            <option>1 eme</option>
+            <option selected>2 eme</option>
+            <option>3 eme</option>
+        </select>
+        <br><br>
+
+        <label>remarque :</label><br>
+        <textarea name="remarque" cols="30" rows="10" placeholder="votre avis"></textarea>
+        <br><br>
+
+        <input type="submit" value="envoyer">
+        <input type="reset" value="Annuler">
+
+    </fieldset>
+</form>
+
 </body>
-
 </html>
